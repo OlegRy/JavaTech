@@ -7,9 +7,6 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-/**
- * Created by oleg on 06.04.15.
- */
 public class DynamicProxyTest {
 
     public static void main(String[] args) throws InterruptedException {

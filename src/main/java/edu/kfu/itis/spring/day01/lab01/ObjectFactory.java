@@ -3,9 +3,6 @@ package edu.kfu.itis.spring.day01.lab01;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * Created by oleg on 06.04.15.
- */
 public class ObjectFactory {
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, InvocationTargetException {

@@ -1,8 +1,7 @@
 package edu.kfu.itis.spring.day01.lab05;
 
-/**
- * Created by oleg on 06.04.15.
- */
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class ProxyTest {
 
     public static void main(String[] args) throws InterruptedException {

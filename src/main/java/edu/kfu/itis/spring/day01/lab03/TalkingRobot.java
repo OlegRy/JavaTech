@@ -5,13 +5,10 @@ import edu.kfu.itis.spring.day01.lab02.Quoter;
 import javax.annotation.PostConstruct;
 import java.util.List;
 
-/**
- * Created by oleg on 06.04.15.
- */
 public class TalkingRobot implements Robot {
 
     private List<Quoter> quoters;
-    
+
     @Override
     @PostConstruct
     public void talk() {
@@ -25,6 +22,6 @@ public class TalkingRobot implements Robot {
     public void setQuoters(List<Quoter> quoters) {
         this.quoters = quoters;
     }
-    
-    
+
+
 }

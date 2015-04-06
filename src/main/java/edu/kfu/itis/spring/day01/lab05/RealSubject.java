@@ -3,9 +3,6 @@ package edu.kfu.itis.spring.day01.lab05;
 import edu.kfu.itis.spring.day01.lab07.Benchmark;
 import edu.kfu.itis.spring.day01.lab08.Transactional;
 
-/**
- * Created by oleg on 06.04.15.
- */
 @Transactional
 public class RealSubject implements Subject {
 

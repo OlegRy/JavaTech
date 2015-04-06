@@ -1,12 +1,10 @@
 package edu.kfu.itis.spring.day01.lab04;
 
 import edu.kfu.itis.spring.day01.lab01.RunThisMethod;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 
 import java.lang.reflect.Method;
 
-/**
- * Created by oleg on 06.04.15.
- */
 public class RunThisMethodBeanPostProcessor implements BeanPostProcessor {
 
     @Override
