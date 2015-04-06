@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="edu.kfu.itis.spring.day01.lab02.ShakespearQuoter" name="shakespearQuoter">
+        <property name="quote" value="2b | !2b" />
+    </bean>
+
+    <bean class="edu.kfu.itis.spring.day01.lab02.TerminatorQuoter" name="terminatorQuoter">
+        <property name="quotes">
+            <list>
+                <value>Astalavista, baby!</value>
+                <value>I'll be back</value>
+                <ref bean="trustMe"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="java.lang.String" id="trustMe">
+        <constructor-arg type="java.lang.String" value="Trust me"/>
+    </bean>
+    <bean class="edu.kfu.itis.spring.day01.lab03.TalkingRobot" name="robot">
+        <property name="quoters">
+            <list>
+                <ref bean="shakespearQuoter" />
+                <ref bean="terminatorQuoter" />
+            </list>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+    <bean class="edu.kfu.itis.spring.day01.lab04.RunThisMethodBeanPostProcessor"/>
+    <bean class="edu.kfu.itis.spring.day01.lab05.BenchmarkProxySubject" name="subject" />
+</beans>
