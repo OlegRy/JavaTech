@@ -14,7 +14,7 @@ public class PrototypeReplacmentBeanPostProcessor implements BeanPostProcessor {
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         Method[] methods = bean.getClass().getMethods();
         Arrays.stream(methods).filter(method ->
-        method.getName().startsWith("get"));
+                method.getName().startsWith("get"));
         return bean;
 
     }
