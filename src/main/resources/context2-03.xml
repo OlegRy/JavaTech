@@ -6,6 +6,6 @@
     <bean class="edu.kfu.itis.spring.day02.lab03.RandomQuoter" name="quoter" scope="prototype" />
 
     <bean class="edu.kfu.itis.spring.day02.lab03.SpeakingRobot" name="robot">
-
+        <lookup-method name="getQuoter" bean="quoter" />
     </bean>
 </beans>
