@@ -13,8 +13,8 @@ public class PrototypeReplacmentBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         Method[] methods = bean.getClass().getMethods();
-        //Arrays.stream(methods).filter(method ->
-        //method.getName().startsWith("get"));
+        Arrays.stream(methods).filter(method ->
+        method.getName().startsWith("get"));
         return bean;
 
     }
